@@ -1,7 +1,7 @@
 require 'rails_helper'
 require 'spec_helper'
 
-describe "homepage", :type => :view do
+describe "homepage" do
   it "When the user is not logged in, the page should show them a login link" do
     visit '/'
     session[:name] = nil
