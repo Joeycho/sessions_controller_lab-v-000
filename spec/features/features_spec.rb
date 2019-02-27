@@ -4,7 +4,7 @@ require 'spec_helper'
 describe "homepage" do
   it "When the user is not logged in, the page should show them a login link" do
     visit '/'
-    let(session[:name]){nil}
+    let(:session[:name]){nil}
     expect(page).to have_link("Login", href:'/login')
   end
 
