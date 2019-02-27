@@ -8,6 +8,7 @@ describe "homepage" do
     {
       name: nil
     }
+    end
 
     expect(page).to have_link("Login", href:'/login')
   end
