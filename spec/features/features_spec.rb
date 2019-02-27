@@ -7,7 +7,7 @@ RSpec.describe "homepage", :type => :view do
     expect(page).to have_link("Login", href:'/login')
   end
 
-  it "When the user is logged in, the page should say, `hi, #{username}`, and provide a logout link" do
+  it "When the user is logged in, the page should say, `hi, #{name}`, and provide a logout link" do
     visit '/'
     session[:name] = "Jakob"
     expect(page).to have_text(`hi, #{session[:name]}`)
