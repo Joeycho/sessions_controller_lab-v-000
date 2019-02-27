@@ -7,8 +7,8 @@ describe "homepage" do
     let(:session) do
     {
       name: nil
-    }  
-    
+    }
+
     expect(page).to have_link("Login", href:'/login')
   end
 
