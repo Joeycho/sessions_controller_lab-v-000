@@ -22,7 +22,7 @@ RSpec.describe "/login", :type => :view do
     click_button('Login')
     expect(current_path).to eq('/')
     expect(page).to have_text(`hi, Tommy`)
-    expect(page).to have_content('Logout')    
+    expect(page).to have_content('Logout')
   end
 
 
